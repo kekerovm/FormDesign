@@ -4,6 +4,10 @@ body {
 
 form {
   display: flex;
+  /* grid-template-columns: 330px 330px 330px; */
+}
+fieldset {
+  border: none;
 }
 .column1 {
   grid-area: column1;
@@ -17,10 +21,15 @@ form {
   grid-area: column3;
 }
 
+:focus {
+  border-color: gray;
+}
+
 label {
   display: block;
   font-size: 0.65em;
   font-family: sans-serif;
+  color: white;
   padding-bottom: 1px;
   margin: 10px;
   text-transform: uppercase;
@@ -30,8 +39,14 @@ input,
 textarea,
 select {
   outline: none;
+  background: transparent;
   border: 1px solid white;
   color: white;
   height: 30px;
   width: 300px;
+  transition: border-color 2s;
+}
+
+.text-box {
+  height: 120px;
 }
