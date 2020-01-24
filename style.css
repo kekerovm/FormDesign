@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(74, 160, 219);
+}
+
+form {
+  display: flex;
+}
+.column1 {
+  grid-area: column1;
+}
+
+.column2 {
+  grid-area: column2;
+}
+
+.column3 {
+  grid-area: column3;
+}
+
+label {
+  display: block;
+  font-size: 0.65em;
+  font-family: sans-serif;
+  padding-bottom: 1px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  height: 30px;
+  width: 300px;
+}
